@@ -19,7 +19,7 @@ class CityResource extends JsonResource
             'name' => $this->name,
             'slug' => $this->slug,
             'icon' => $this->icon,
-            'weddingPackages_count' => $this->weddingPackages_count,
+            'wedding_packages_count' => $this->wedding_packages_count,
             'weddingPackages' => WeddingPackageResource::collection($this->whenLoaded('weddingPackages')),
         ];
     }

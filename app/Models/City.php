@@ -24,7 +24,7 @@ class City extends Model
         $this->attributes['slug'] = Str::slug($value);
     }
 
-    public function weddingPackages(): HasMany
+    public function weddingPackages()
     {
         return $this->hasMany(WeddingPackage::class);
     }

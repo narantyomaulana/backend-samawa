@@ -43,9 +43,9 @@ class WeddingPackage extends Model
         return $this->belongsTo(WeddingOrganizer::class, 'wedding_organizer_id');
     }
 
-    public function city(): BelongsTo
+    public function city()
     {
-        return $this->belongsTo(City::class, 'city_id');
+        return $this->belongsTo(City::class);
     }
 
     public function photos(): HasMany
